@@ -1,0 +1,123 @@
+* /*{
+    box-sizing: border-box;
+   }*/
+   
+   /*body {
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+   }*/
+   .setting{
+    padding:3%;
+
+   }
+   
+   .table {
+    background-color: #999;
+    display: table;
+    margin: 1.25rem auto;
+    width: 20rem;
+    padding:1%;
+   }
+   
+   .row {
+    display: table-row;
+   }
+   
+   .cell {
+    display: table-cell;
+    height: 2.5rem;
+    vertical-align: middle;
+   }
+   
+   .cell:first-child {
+    text-align: left;
+   }
+   
+   .cell:last-child {
+    text-align: right;
+   }
+   
+   .table .fa {
+    background-color: #333;
+    box-shadow: 0 .075rem .075rem 0 rgba(0, 0, 0, .25) inset, 0 .075rem .075rem 0 rgba(255, 255, 255, .25);
+    color: #aaa;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    line-height: 2.375rem;
+    margin: 0 .625rem 0 0;
+    text-align: center;
+    text-shadow: 0 .075rem .125rem rgba(0, 0, 0, .25);
+    width: 2.5rem;
+   }
+   
+   .table fieldset {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+   }
+   
+   .table label {
+    background-color: #c00;
+    border-radius: 1.25rem;
+    box-shadow: 0 .075rem .075rem 0 rgba(0, 0, 0, .25) inset, 0 .075rem .075rem 0 rgba(255, 255, 255, .25);
+    cursor: pointer;
+    display: block;
+    font-size: .75rem;
+    height: 2.5rem;
+    position: relative;
+    text-shadow: 0 .075rem rgba(0, 0, 0, .5);
+    transition: 250ms ease-in-out;
+    width: 4.375rem;
+   }
+   
+   .table input[type="checkbox"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+   }
+   
+   .table label:before {
+    background: linear-gradient(#777, #aaa);
+    border-radius: .625rem;
+    box-shadow: 0 .075rem .075rem 0 rgba(255, 255, 255, .5) inset, 0 .125rem .125rem 0 rgba(0, 0, 0, .25);
+    content: '';
+    height: 1.25rem;
+    left: .625rem;
+    position: absolute;
+    top: .625rem;
+    transition: 250ms ease-in-out;
+    width: 1.25rem;
+   }
+   
+   .table label:after {
+    color: #ccc;
+    content: 'off';
+    height: 2.5rem;
+    left: 2.25rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: .875rem;
+    transition: 250ms ease-in-out;
+   }
+   
+   .table input[type="checkbox"]:checked ~ label {
+    background-color: #390;
+   }
+   
+   .table input[type="checkbox"]:checked ~ label:before {
+    left: 2.5rem;
+   }
+   
+   .table input[type="checkbox"]:checked ~ label:after {
+    content: 'on';
+    left: .625rem;
+   }
